@@ -1,0 +1,18 @@
+{
+  "name": "talentflow-ats",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise Applicant Tracking & Recruitment Management System with Automated Aggregation Pipelines",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "seed": "npm --prefix backend run seed",
+    "backend": "npm --prefix backend start",
+    "backend:dev": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "test": "node backend/scripts/verify_project.js",
+    "backup": "node backend/scripts/backup.js",
+    "restore": "node backend/scripts/restore.js"
+  }
+}
+
